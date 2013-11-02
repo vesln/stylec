@@ -5,6 +5,7 @@ var root = fs.readdirSync(cases);
 
 suite('Cases', function() {
   root.forEach(function(dir) {
+    if (dir.charAt(0) === '.') return;
     var files = fs.readdirSync(cases + dir);
     var name = dir.replace(/-/g, ' ');
 
