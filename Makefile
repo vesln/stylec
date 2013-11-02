@@ -17,6 +17,7 @@ clean:
 
 test-cov: lib-cov
 	@STYLEC=1 NODE_ENV=test ./node_modules/.bin/mocha \
+		--ui tdd \
 		--reporter html-cov \
 		test/*.test.js \
 		> coverage.html
@@ -27,6 +28,7 @@ lib-cov:
 
 test-coveralls: lib-cov
 	@STYLEC=1 NODE_ENV=test ./node_modules/.bin/mocha \
+		--ui tdd \
 		--reporter mocha-lcov-reporter \
 		test/*.test.js \
 		| ./node_modules/coveralls/bin/coveralls.js
