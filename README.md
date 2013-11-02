@@ -1,3 +1,4 @@
+[![NPM version](https://badge.fury.io/js/nixt.png)](http://badge.fury.io/js/nixt)
 [![Build Status](https://secure.travis-ci.org/vesln/stylec.png)](http://travis-ci.org/vesln/stylec)
 [![Coverage Status](https://coveralls.io/repos/vesln/stylec/badge.png?branch=master)](https://coveralls.io/r/vesln/stylec?branch=master)
 [![Code Climate](https://codeclimate.com/github/vesln/stylec.png)](https://codeclimate.com/github/vesln/stylec)
