@@ -1,3 +1,3 @@
 module.exports = [
-  { line: 1, column: 0 }
+  { line: 3, column: 0 }
 ];
