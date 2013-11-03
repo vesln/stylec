@@ -18,3 +18,7 @@ var bad = [1, 2, 3,];
 var bad = [1,
   2, 3,
 ];
+
+var bad = [1, 2, 3, /* bad */];
+
+var good = [];

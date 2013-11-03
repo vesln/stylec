@@ -7,3 +7,5 @@ var   bad;
 if (foo) {
   if (   fo) true;
 }
+
+/*   bad  */

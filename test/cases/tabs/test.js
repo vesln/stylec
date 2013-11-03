@@ -1,4 +1,4 @@
-/* stylec notabs: true */
+/* stylec notabs: on */
 
 var bad = 	'';
 var good = /\t/;

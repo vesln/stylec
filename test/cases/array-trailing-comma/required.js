@@ -19,3 +19,5 @@ var bad = [
   1, 2,
   3
 ];
+
+var good = [];
