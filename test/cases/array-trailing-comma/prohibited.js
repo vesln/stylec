@@ -1,4 +1,4 @@
-/* stylec arrcomma: prohibited */
+/* stylec arrcomma: prohibited, commaspace: off */
 
 var good = [
   1,
