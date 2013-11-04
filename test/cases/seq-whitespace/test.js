@@ -2,10 +2,16 @@
 
     var good;
 
-var   bad; //! column: 0
+var   bad; //! column: 3
 
 if (foo) {
-  if (   fo) true; //! column: 0
+  if (   fo) true; //! column: 6
 }
 
-/*   bad  */ //! column: 0
+/*   this is fine  */
+
+var ok
+ = ish;
+
+for  (key in   obj) { //! column: 3, 12
+}
