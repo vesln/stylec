@@ -1,0 +1,70 @@
+#!/usr/bin/env node
+
+/**
+ * Core dependencies.
+ */
+
+var fs = require('fs');
+var path = require('path');
+
+/**
+ * External dependencies.
+ */
+
+var sjs = require('shelljs');
+
+var stylec = require('..');
+var argv = process.argv.splice(2);
+var dest = argv[0];
+var config = {};
+var file = null;
+
+if (!dest) {
+  throw new Error('Please specify a destination');
+}
+
+dest = path.join(process.cwd(), dest);
+
+var file = (function() {
+  var envs = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
+  var home = path.normalize(path.join(envs, '.stylecrc'));
+  var cwd = path.join(process.cwd(), '.stylecrc');
+  if (fs.existsSync(cwd)) return cwd;
+  if (fs.existsSync(home)) return home;
+})();
+
+if (file) {
+  try {
+    file = fs.readFileSync(file);
+    config = JSON.parse(file);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+var files = sjs.find(dest).filter(function(file) {
+  return file.match(/\.js$/);
+});
+
+var sources = files.map(function(file) {
+  return stylec.runFile(file, config);
+});
+
+var errors = 0;
+
+sources.forEach(function(source) {
+  if (source.errors.length === 0) return;
+
+  source.errors.forEach(function(err) {
+    var file = source.file.replace(process.cwd(), '');
+    errors++;
+    console.log(file + ': line ' + err.line + ', col: ' + err.column
+      + ', ' + err.message);
+  });
+});
+
+if (errors > 0) {
+  console.log(' ');
+  console.log(errors + ' errors');
+  process.exit(1);
+}

@@ -1,0 +1,22 @@
+{
+  "arrcomma": "prohibited",
+  "blanklines": 1,
+  "comparison": "strict",
+  "fnmax": 15,
+  "fnparams": 4,
+  "fnmin": false,
+  "fncase": "camel case",
+  "noincdec": false,
+  "line": 80,
+  "numdec": true,
+  "okeymax": 20,
+  "okeymin": false,
+  "quotes": "single",
+  "seqws": 2,
+  "tabs": true,
+  "twhite": true,
+  "unary": 0,
+  "varmax": 15,
+  "varmin": false,
+  "varcase": "camel case"
+}

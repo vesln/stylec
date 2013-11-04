@@ -37,7 +37,14 @@ suite('Cases', function() {
             });
           });
 
-          var actual = stylec.runFile(dirname + file).map(function(err) {
+          var source = stylec.runFile(dirname + file);
+          var actual = source.errors.sort(function(a, b) {
+            if (a.line < b.line) return -1;
+            if (a.line > b.line) return 1;
+
+            if (a.column < b.column) return -1;
+            return 1;
+          }).map(function(err) {
             return { line: err.line, column: err.column };
           });
 

@@ -44,6 +44,7 @@ do {
 } while (i--); //! column: 9
 
 for (key in foo) {
+  i++; //! column: 2
 }
 
 foo:
