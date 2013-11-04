@@ -1,4 +1,4 @@
-/* stylec twhite: on */
+/* stylec twhite: true */
 
 var foo = 3; 
 

@@ -1,4 +1,4 @@
-/* stylec notabs: on */
+/* stylec notabs: true */
 
 var bad = 	''; //! column: 0
 var good = /\t/;

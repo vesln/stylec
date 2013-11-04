@@ -1,4 +1,4 @@
-/* stylec noincdec: on */
+/* stylec noincdec: true */
 
 var bad = 0;
 bad++; //! column: 0
