@@ -3,40 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/vesln/stylec/badge.png?branch=master)](https://coveralls.io/r/vesln/stylec?branch=master)
 [![Code Climate](https://codeclimate.com/github/vesln/stylec.png)](https://codeclimate.com/github/vesln/stylec)
 
-## Synopsis
-
-## Description
-
-## Tests
-
-### Running the tests
-
-```bash
-$ npm install
-$ make test
-```
-
-### Test coverage
-
-```bash
-$ make test-cov
-```
-
-### JSHint
-
-```bash
-$ make jshint
-```
-
-### Tests + JSHint
-
-```bash
-$ make check
-```
-
-## Contributors
-
-## Credits
+# Under development
 
 ## Support the author
 
