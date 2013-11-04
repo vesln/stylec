@@ -2,10 +2,10 @@
 
     var good;
 
-var   bad;
+var   bad; //! column: 0
 
 if (foo) {
-  if (   fo) true;
+  if (   fo) true; //! column: 0
 }
 
-/*   bad  */
+/*   bad  */ //! column: 0

@@ -4,24 +4,24 @@ var good;
 var alsoGood = true;
 var notBad = false;
 
-var veryBad
+var veryBad //! column: 0
   = true;
 
-var very, bad;
+var very, bad; //! column: 0
 
-var well,
+var well, //! column: 0
     that,
     is,
     bad;
 
-var also, very
+var also, very //! column: 0
   = 'bad';
 
-var bad
+var bad //! column: 0
   , hello
   , there;
 
-var bad = true
+var bad = true //! column: 0
   , too = false;
 
 var fine

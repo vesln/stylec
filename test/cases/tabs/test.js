@@ -1,5 +1,5 @@
 /* stylec notabs: on */
 
-var bad = 	'';
+var bad = 	''; //! column: 0
 var good = /\t/;
-	var veryBad = '';
+	var veryBad = ''; //! column: 0

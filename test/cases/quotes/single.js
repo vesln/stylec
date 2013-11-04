@@ -1,7 +1,7 @@
 /* stylec quotes: single */
 
 var good = 'good';
-var bad = "bad";
+var bad = "bad"; //! column: 10
 
-var bad = 'this' + "is" + 'bad';
-var alsoBad = "";
+var bad = 'this' + "is" + 'bad'; //! column: 19
+var alsoBad = ""; //! column: 14

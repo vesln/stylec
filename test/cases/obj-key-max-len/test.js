@@ -1,9 +1,9 @@
 /* stylec okeymax: 3 */
 
 var obj = {
-  iabb: 3,
-  abbbb: 4,
+  iabb: 3, //! column: 2
+  abbbb: 4, //! column: 2
 };
 
-obj.fofff = {};
-obj.fo.baaaa = {};
+obj.fofff = {}; //! column: 4
+obj.fo.baaaa = {}; //! column: 7
