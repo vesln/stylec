@@ -21,3 +21,4 @@ var bad = [
 ];
 
 var good = [];
+var good = [1, 2, 3, /* this would be stupid but should work */];
